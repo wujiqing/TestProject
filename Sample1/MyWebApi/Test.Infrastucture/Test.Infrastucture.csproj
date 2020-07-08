@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Test.Infrastructure.core\Test.Infrastructure.core.csproj" />
+    <ProjectReference Include="..\Test.Ordering.Domain\Test.Ordering.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

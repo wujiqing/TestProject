@@ -1,0 +1,17 @@
+{
+  "ReRoutes": [ 
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/mobile/api/{everything}",
+      "UpstreamHttpMethod": []
+    }
+
+  ] 
+}

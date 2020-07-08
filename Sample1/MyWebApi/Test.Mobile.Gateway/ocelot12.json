@@ -1,0 +1,44 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/mobileAgg/api/{everything}",
+      "UpstreamHttpMethod": [],
+      "Key": "Good"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/mobile/api/{everything}",
+      "UpstreamHttpMethod": [],
+      "Key": "Order"
+    }
+
+  ],
+  "GlobalConfiguration": {
+    //"RequestIdKey": "OcRequestId",
+    //"AdministrationPath": "/administration"
+  },
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "Good",
+        "Order"
+      ],
+      "UpstreamPathTemplate": "/GetOrderDetail/{everything}"
+    }
+  ]
+}

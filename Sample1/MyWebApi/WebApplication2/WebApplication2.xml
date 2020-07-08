@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication2</name>
+    </assembly>
+    <members>
+        <member name="T:TestOrderGrpcServices.ProtobufReflection">
+            <summary>Holder for reflection information generated from Proto/protobuf.proto</summary>
+        </member>
+        <member name="P:TestOrderGrpcServices.ProtobufReflection.Descriptor">
+            <summary>File descriptor for Proto/protobuf.proto</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderCommand.BuyerIdFieldNumber">
+            <summary>Field number for the "buyerId" field.</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderCommand.ProductIdFieldNumber">
+            <summary>Field number for the "productId" field.</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderCommand.UnitPriceFieldNumber">
+            <summary>Field number for the "unitPrice" field.</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderCommand.DiscountFieldNumber">
+            <summary>Field number for the "discount" field.</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderCommand.UnitsFieldNumber">
+            <summary>Field number for the "units" field.</summary>
+        </member>
+        <member name="F:TestOrderGrpcServices.CreateOrderResult.OrderIdFieldNumber">
+            <summary>Field number for the "orderId" field.</summary>
+        </member>
+        <member name="P:TestOrderGrpcServices.OrderGrpc.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:TestOrderGrpcServices.OrderGrpc.OrderGrpcBase">
+            <summary>Base class for server-side implementations of OrderGrpc</summary>
+        </member>
+        <member name="M:TestOrderGrpcServices.OrderGrpc.BindService(TestOrderGrpcServices.OrderGrpc.OrderGrpcBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:TestOrderGrpcServices.OrderGrpc.BindService(Grpc.Core.ServiceBinderBase,TestOrderGrpcServices.OrderGrpc.OrderGrpcBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>
